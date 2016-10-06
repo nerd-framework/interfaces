@@ -5,7 +5,7 @@ namespace Nerd\Framework\Http;
 interface ResponseContract
 {
     /**
-     * Prepare HTTP Response to send to client.
+     * Prepare HTTP Response to send to client
      *
      * @param RequestContract $request
      * @return mixed
@@ -13,7 +13,7 @@ interface ResponseContract
     public function prepare(RequestContract $request);
 
     /**
-     * Send HTTP Response to client.
+     * Send HTTP Response to client
      *
      * @param OutputContract $output
      * @return mixed
