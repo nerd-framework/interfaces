@@ -14,9 +14,9 @@ interface CookieContract
 
     public function getDomain();
 
-    public function getSecure();
+    public function isSecure();
 
-    public function getHttp();
+    public function isHttpOnly();
 
     public function isRaw();
 }
