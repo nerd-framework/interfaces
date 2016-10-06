@@ -5,6 +5,6 @@ namespace Nerd\Framework\Http;
 interface OutputContract
 {
     public function sendCookie(CookieContract $cookie);
-    public function sendHeader($name, $value);
+    public function sendHeader($header);
     public function sendData($data);
 }
