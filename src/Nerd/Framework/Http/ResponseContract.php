@@ -15,7 +15,8 @@ interface ResponseContract
     /**
      * Send HTTP Response to client.
      *
+     * @param OutputContract $output
      * @return mixed
      */
-    public function render();
+    public function render(OutputContract $output);
 }
