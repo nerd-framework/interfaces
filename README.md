@@ -1,2 +1,2 @@
-# interfaces
-Interfaces for Nerd Framework
+# nerd-contracts
+Interfaces used in Nerd Framework
