@@ -2,7 +2,7 @@
 
 namespace Nerd\Framework\Container;
 
-interface ContainerExceptionContract extends \Throwable
+interface ContainerExceptionContract
 {
 
 }
