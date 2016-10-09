@@ -1,8 +1,6 @@
 <?php
 
-namespace Nerd\Framework;
-
-use Nerd\Framework\Container\ContainerExceptionContract;
+namespace Nerd\Framework\Container;
 
 interface ContainerContract
 {
