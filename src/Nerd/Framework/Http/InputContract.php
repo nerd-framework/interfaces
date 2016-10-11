@@ -9,19 +9,19 @@ interface InputContract
      *
      * @return RequestContract
      */
-    public function getRequestObject();
+    public function getRequest();
 
     /**
      * Get HTTP Request Body as string
      *
      * @return string
      */
-    public function getRequestBody();
+    public function getBody();
 
     /**
      * Get HTTP Request Body Stream
      *
      * @return resource
      */
-    public function getRequestBodyStream();
+    public function getStream();
 }
