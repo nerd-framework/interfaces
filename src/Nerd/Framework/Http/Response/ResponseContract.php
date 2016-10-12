@@ -1,6 +1,9 @@
 <?php
 
-namespace Nerd\Framework\Http;
+namespace Nerd\Framework\Http\Response;
+
+use Nerd\Framework\Http\IO\OutputContract;
+use Nerd\Framework\Http\Request\RequestContract;
 
 interface ResponseContract
 {

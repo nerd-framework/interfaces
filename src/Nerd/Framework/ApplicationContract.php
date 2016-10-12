@@ -2,8 +2,8 @@
 
 namespace Nerd\Framework;
 
-use Nerd\Framework\Http\RequestContract;
-use Nerd\Framework\Http\ResponseContract;
+use Nerd\Framework\Http\Request\RequestContract;
+use Nerd\Framework\Http\Response\ResponseContract;
 
 interface ApplicationContract
 {

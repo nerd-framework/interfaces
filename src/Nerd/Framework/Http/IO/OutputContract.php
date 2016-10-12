@@ -1,6 +1,8 @@
 <?php
 
-namespace Nerd\Framework\Http;
+namespace Nerd\Framework\Http\IO;
+
+use Nerd\Framework\Http\Response\CookieContract;
 
 interface OutputContract
 {

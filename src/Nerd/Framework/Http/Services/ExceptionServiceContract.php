@@ -1,6 +1,8 @@
 <?php
 
-namespace Nerd\Framework\Http;
+namespace Nerd\Framework\Http\Services;
+
+use Nerd\Framework\Http\Response\ResponseContract;
 
 interface ExceptionServiceContract
 {
