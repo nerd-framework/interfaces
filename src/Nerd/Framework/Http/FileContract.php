@@ -33,4 +33,9 @@ interface FileContract
      * @return boolean
      */
     public function isOk();
+
+    /**
+     * @return int
+     */
+    public function getError();
 }
