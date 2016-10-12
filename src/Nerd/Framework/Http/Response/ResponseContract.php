@@ -22,4 +22,11 @@ interface ResponseContract
      * @return mixed
      */
     public function render(OutputContract $output);
+
+    /**
+     * Close response
+     *
+     * @return mixed
+     */
+    public function close();
 }
