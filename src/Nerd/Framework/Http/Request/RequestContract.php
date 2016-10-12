@@ -27,6 +27,13 @@ interface RequestContract
     public function getPath();
 
     /**
+     * Is HTTPS connection used.
+     *
+     * @return boolean
+     */
+    public function isSecure();
+
+    /**
      * Get server parameter.
      *
      * @param string $key
@@ -61,4 +68,25 @@ interface RequestContract
      * @return mixed
      */
     public function getCookie($key, $default = null);
+
+    /**
+     * Get user agent.
+     *
+     * @return mixed
+     */
+    public function getUserAgent();
+
+    /**
+     * Get remote address.
+     *
+     * @return mixed
+     */
+    public function getRemoteAddress();
+
+    /**
+     * Get local address.
+     *
+     * @return mixed
+     */
+    public function getServerAddress();
 }
