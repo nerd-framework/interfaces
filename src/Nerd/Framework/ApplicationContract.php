@@ -5,7 +5,7 @@ namespace Nerd\Framework;
 use Nerd\Framework\Http\Request\RequestContract;
 use Nerd\Framework\Http\Response\ResponseContract;
 
-interface ApplicationContract
+interface ApplicationContract extends Container\ContainerContract
 {
     /**
      * Handle HTTP Request by Application and return HTTP Response
@@ -14,4 +14,18 @@ interface ApplicationContract
      * @return ResponseContract
      */
     public function handle(RequestContract $request);
+
+    /**
+     * @param string $key
+     * @param mixed $default
+     * @return mixed
+     */
+    public function config($key, $default = null);
+
+    /**
+     * @param string $key
+     * @param mixed $default
+     * @return mixed
+     */
+    public function env($key, $default = null);
 }
