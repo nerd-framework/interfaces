@@ -1,6 +1,6 @@
 <?php
 
-namespace Nerd\Framework\Http;
+namespace Nerd\Framework\Http\Request;
 
 interface FileContract
 {

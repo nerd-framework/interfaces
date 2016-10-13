@@ -1,11 +1,13 @@
 <?php
 
-namespace Nerd\Framework\Http;
+namespace Nerd\Framework\Http\IO;
+
+use Nerd\Framework\Http\Request\RequestContract;
 
 interface InputContract
 {
     /**
-     * Get HTTP Request Object
+     * Get HTTP Request
      *
      * @return RequestContract
      */

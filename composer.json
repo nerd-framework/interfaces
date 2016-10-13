@@ -1,6 +1,6 @@
 {
   "name": "nerd-framework/nerd-contracts",
-  "description": "Contracts used in Nerd Framework",
+  "description": "Framework contracts used in Nerd Framework",
   "type": "library",
   "license": "MIT",
   "authors": [

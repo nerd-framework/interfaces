@@ -2,7 +2,7 @@
 
 namespace Nerd\Framework\Routing;
 
-use Nerd\Framework\Http\RequestContract;
+use Nerd\Framework\Http\Request\RequestContract;
 
 interface RouterContract
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nerd\Framework\Http;
+namespace Nerd\Framework\Http\Request;
 
 interface RequestContract
 {
@@ -25,6 +25,13 @@ interface RequestContract
      * @return string
      */
     public function getPath();
+
+    /**
+     * Is HTTPS connection used.
+     *
+     * @return boolean
+     */
+    public function isSecure();
 
     /**
      * Get server parameter.
@@ -61,4 +68,25 @@ interface RequestContract
      * @return mixed
      */
     public function getCookie($key, $default = null);
+
+    /**
+     * Get user agent.
+     *
+     * @return mixed
+     */
+    public function getUserAgent();
+
+    /**
+     * Get remote address.
+     *
+     * @return mixed
+     */
+    public function getRemoteAddress();
+
+    /**
+     * Get local address.
+     *
+     * @return mixed
+     */
+    public function getServerAddress();
 }
