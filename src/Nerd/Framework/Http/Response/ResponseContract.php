@@ -22,4 +22,9 @@ interface ResponseContract
      * @return mixed
      */
     public function render(OutputContract $output);
+    
+    /**
+     * Close HTTP Response
+     */
+    public function close();
 }
