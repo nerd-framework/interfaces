@@ -4,7 +4,16 @@ namespace Nerd\Framework\TestSuite\Result;
 
 interface JsonResultContract extends BaseResultContract
 {
-    public function containsNode($node);
+    /**
+     * @param string $path
+     * @return $this
+     */
+    public function containsNode($path);
 
-    public function nodeEqualsTo($expected, $node);
+    /**
+     * @param mixed $expected
+     * @param string $path
+     * @return mixed
+     */
+    public function nodeEqualsTo($expected, $path);
 }

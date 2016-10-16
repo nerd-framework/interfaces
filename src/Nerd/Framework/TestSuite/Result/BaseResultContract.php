@@ -12,13 +12,19 @@ interface BaseResultContract
 
     /**
      * @param string $name
-     * @return mixed
+     * @return $this
      */
     public function expectHeader($name);
 
     /**
      * @param string $name
-     * @return mixed
+     * @return $this
      */
     public function expectSetCookie($name);
+
+    /**
+     * @param string $contentType
+     * @return $this
+     */
+    public function expectContentType($contentType);
 }
