@@ -1,6 +1,6 @@
 <?php
 
-namespace Nerd\Framework\TestSuite\Result;
+namespace Nerd\Framework\TestSuite\NavigationResult;
 
 interface JsonResultContract extends BaseResultContract
 {

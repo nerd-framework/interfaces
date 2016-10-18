@@ -1,6 +1,6 @@
 <?php
 
-namespace Nerd\Framework\TestSuite\Result;
+namespace Nerd\Framework\TestSuite\NavigationResult;
 
 interface BaseResultContract
 {
@@ -14,7 +14,7 @@ interface BaseResultContract
      * @param string $name
      * @return $this
      */
-    public function expectHeader($name);
+    public function expectSetHeader($name);
 
     /**
      * @param string $name
