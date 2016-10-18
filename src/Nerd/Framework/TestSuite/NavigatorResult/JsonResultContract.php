@@ -5,15 +5,15 @@ namespace Nerd\Framework\TestSuite\NavigatorResult;
 interface JsonResultContract extends BaseResultContract
 {
     /**
-     * @param string $path
+     * @param string $node
      * @return $this
      */
-    public function containsNode($path);
+    public function containsNode($node);
 
     /**
      * @param mixed $expected
-     * @param string $path
+     * @param string $node
      * @return mixed
      */
-    public function nodeEqualsTo($expected, $path);
+    public function nodeEqualsTo($expected, $node);
 }

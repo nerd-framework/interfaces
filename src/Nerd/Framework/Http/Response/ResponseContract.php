@@ -11,7 +11,7 @@ interface ResponseContract
      * Prepare HTTP Response to send to client
      *
      * @param RequestContract $request
-     * @return mixed
+     * @return void
      */
     public function prepare(RequestContract $request);
 
@@ -19,12 +19,14 @@ interface ResponseContract
      * Send HTTP Response to client
      *
      * @param OutputContract $output
-     * @return mixed
+     * @return void
      */
     public function render(OutputContract $output);
     
     /**
      * Close HTTP Response
+     *
+     * @return void
      */
     public function close();
 }
