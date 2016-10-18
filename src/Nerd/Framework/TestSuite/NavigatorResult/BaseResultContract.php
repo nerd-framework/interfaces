@@ -1,6 +1,6 @@
 <?php
 
-namespace Nerd\Framework\TestSuite\NavigationResult;
+namespace Nerd\Framework\TestSuite\NavigatorResult;
 
 interface BaseResultContract
 {
