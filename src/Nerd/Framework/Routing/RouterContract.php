@@ -14,7 +14,7 @@ interface RouterContract
      * @param mixed $data
      * @return RouterContract
      */
-    public function get($route, $action, $data = null);
+    public function get(string $route, callable $action, $data = null): self;
 
     /**
      * Add route for POST method into routes list.
@@ -24,7 +24,7 @@ interface RouterContract
      * @param mixed $data
      * @return RouterContract
      */
-    public function post($route, $action, $data = null);
+    public function post(string $route, callable $action, $data = null): self;
 
     /**
      * Add route for PUT method into routes list.
@@ -34,7 +34,7 @@ interface RouterContract
      * @param mixed $data
      * @return RouterContract
      */
-    public function put($route, $action, $data = null);
+    public function put(string $route, callable $action, $data = null): self;
 
     /**
      * Add route for DELETE method into routes list.
@@ -44,7 +44,7 @@ interface RouterContract
      * @param mixed $data
      * @return RouterContract
      */
-    public function delete($route, $action, $data = null);
+    public function delete(string $route, callable $action, $data = null): self;
 
     /**
      * @param string $route
@@ -52,27 +52,27 @@ interface RouterContract
      * @param null $data
      * @return RouterContract
      */
-    public function any($route, $action, $data = null);
+    public function any(string $route, callable $action, $data = null): self;
 
     /**
      * Add middleware to router.
      *
-     * @param $route
-     * @param $middleware
+     * @param string $route
+     * @param callable $middleware
      * @return RouterContract
      */
-    public function middleware($route, $middleware);
+    public function middleware(string $route, callable $middleware): self;
 
     /**
      * Add route into routes list.
      *
-     * @param string|array $methods
+     * @param array $methods
      * @param string $regexp
      * @param callable $action
      * @param mixed $data
      * @return RouterContract
      */
-    public function add($methods, $regexp, $action, $data = null);
+    public function add(array $methods, string $regexp, callable $action, $data = null): self;
 
     /**
      * Pass request through router.
