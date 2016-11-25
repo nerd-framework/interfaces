@@ -21,11 +21,4 @@ interface ApplicationContract extends Container\ContainerContract
      * @return mixed
      */
     public function config($key, $default = null);
-
-    /**
-     * @param string $key
-     * @param mixed $default
-     * @return mixed
-     */
-    public function env($key, $default = null);
 }
