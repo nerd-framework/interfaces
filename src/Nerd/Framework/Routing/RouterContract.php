@@ -4,75 +4,77 @@ namespace Nerd\Framework\Routing;
 
 use Nerd\Framework\Http\Request\RequestContract;
 
+use Nerd\Framework\Routing\RoutePatternMatcher\RoutePatternMatcherContract as Matcher;
+
 interface RouterContract
 {
     /**
      * Add route for GET method into routes list.
      *
-     * @param string $route
+     * @param Matcher $matcher
      * @param callable $action
      * @param mixed $data
      * @return RouterContract
      */
-    public function get(string $route, callable $action, $data = null);
+    public function get(Matcher $matcher, callable $action, $data = null);
 
     /**
      * Add route for POST method into routes list.
      *
-     * @param string $route
+     * @param Matcher $matcher
      * @param callable $action
      * @param mixed $data
      * @return RouterContract
      */
-    public function post(string $route, callable $action, $data = null);
+    public function post(Matcher $matcher, callable $action, $data = null);
 
     /**
      * Add route for PUT method into routes list.
      *
-     * @param string $route
+     * @param Matcher $matcher
      * @param callable $action
      * @param mixed $data
      * @return RouterContract
      */
-    public function put(string $route, callable $action, $data = null);
+    public function put(Matcher $matcher, callable $action, $data = null);
 
     /**
      * Add route for DELETE method into routes list.
      *
-     * @param string $route
+     * @param Matcher $matcher
      * @param callable $action
      * @param mixed $data
      * @return RouterContract
      */
-    public function delete(string $route, callable $action, $data = null);
+    public function delete(Matcher $matcher, callable $action, $data = null);
 
     /**
-     * @param string $route
+     * @param Matcher $matcher
      * @param callable $action
      * @param null $data
      * @return RouterContract
      */
-    public function any(string $route, callable $action, $data = null);
+    public function any(Matcher $matcher, callable $action, $data = null);
 
     /**
      * Add middleware to router.
      *
-     * @param string $route
+     * @param Matcher $matcher
      * @param callable $middleware
      * @return RouterContract
      */
-    public function middleware(string $route, callable $middleware);
+    public function middleware(Matcher $matcher, callable $middleware);
 
     /**
      * Add route into routes list.
      *
      * @param array $methods
-     * @param string $regexp
+     * @param Matcher $matcher
      * @param callable $action
      * @param mixed $data
      * @return RouterContract
      */
-    public function add(array $methods, string $regexp, callable $action, $data = null);
+    public function add(array $methods, Matcher $matcher, callable $action, $data = null);
 
     /**
      * Pass request through router.
