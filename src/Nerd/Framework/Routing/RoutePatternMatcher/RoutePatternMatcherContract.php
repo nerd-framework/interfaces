@@ -10,7 +10,7 @@ namespace Nerd\Framework\Routing\RoutePatternMatcher;
 
 interface RoutePatternMatcherContract
 {
-    public function matches(string $route): boolean;
+    public function matches(string $route): bool;
 
     public function parameters(string $route): array;
 }
