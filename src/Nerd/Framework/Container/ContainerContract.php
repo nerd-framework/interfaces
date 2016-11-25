@@ -32,17 +32,17 @@ interface ContainerContract
 
     /**
      * @param string $id
-     * @param null $provider
+     * @param mixed $provider
      * @return $this
      */
-    public function singleton($id, $provider = null);
+    public function singleton($id, $provider);
 
     /**
      * @param string $id
-     * @param null $provider
+     * @param mixed $provider
      * @return $this
      */
-    public function factory($id, $provider = null);
+    public function factory($id, $provider);
 
     /**
      * @param $callable
