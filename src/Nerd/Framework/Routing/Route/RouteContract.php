@@ -13,6 +13,17 @@ use Nerd\Framework\Http\Request\RequestContract as Request;
 interface RouteContract
 {
     /**
+     * @param string $string
+     * @return $this
+     */
+    public function setName(string $string);
+
+    /**
+     * @return string
+     */
+    public function getName();
+
+    /**
      * @return callable
      */
     public function getAction(): callable;
