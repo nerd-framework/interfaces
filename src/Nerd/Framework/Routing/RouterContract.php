@@ -3,6 +3,7 @@
 namespace Nerd\Framework\Routing;
 
 use Nerd\Framework\Http\Request\RequestContract;
+use Nerd\Framework\Routing\Route\RouteContract;
 
 interface RouterContract
 {
@@ -11,43 +12,43 @@ interface RouterContract
      *
      * @param string $pattern
      * @param callable[] ...$action
-     * @return RouterContract
+     * @return RouteContract
      */
-    public function get(string $pattern, callable ...$action);
+    public function get(string $pattern, callable ...$action): RouteContract;
 
     /**
      * Add route for POST method into routes list.
      *
      * @param string $pattern
      * @param callable[] ...$action
-     * @return RouterContract
+     * @return RouteContract
      */
-    public function post(string $pattern, callable ...$action);
+    public function post(string $pattern, callable ...$action): RouteContract;
 
     /**
      * Add route for PUT method into routes list.
      *
      * @param string $pattern
      * @param callable[] ...$action
-     * @return RouterContract
+     * @return RouteContract
      */
-    public function put(string $pattern, callable ...$action);
+    public function put(string $pattern, callable ...$action): RouteContract;
 
     /**
      * Add route for DELETE method into routes list.
      *
      * @param string $pattern
      * @param callable[] ...$action
-     * @return RouterContract
+     * @return RouteContract
      */
-    public function delete(string $pattern, callable ...$action);
+    public function delete(string $pattern, callable ...$action): RouteContract;
 
     /**
      * @param string $pattern
      * @param callable[] ...$action
-     * @return RouterContract
+     * @return RouteContract
      */
-    public function any(string $pattern, callable ...$action);
+    public function any(string $pattern, callable ...$action): RouteContract;
 
     /**
      * Add route into routes list.
@@ -55,9 +56,9 @@ interface RouterContract
      * @param array $methods
      * @param string $pattern
      * @param callable[] ...$action
-     * @return RouterContract
+     * @return RouteContract
      */
-    public function add(array $methods, string $pattern, callable ...$action);
+    public function add(array $methods, string $pattern, callable ...$action): RouteContract;
 
     /**
      * Pass request through router.
