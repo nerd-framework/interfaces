@@ -41,4 +41,9 @@ interface OutputContract
      * Clear output buffer
      */
     public function flush();
+
+    /**
+     * Close output
+     */
+    public function close();
 }
